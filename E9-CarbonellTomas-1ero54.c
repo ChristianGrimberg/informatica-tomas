@@ -1,25 +1,45 @@
 /*
- Se debe ingresar un número entero, debiéndose indicar si dicho número es par o impar.*/
+Autor: Carbonell Tomas
+Comision: 1ro54
+
+Se leen tres numeros, A, B, y C. Se pide escribir el mayor de ellos.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
-main()
+void main()
 {
-	//Declarar variables para reservar espacio en memoria
+	int A;
+	int B;
+	int C;
 	
-	int numero;
-	//Interactuar con el usuario
-	printf("ingresar un numero: ");
-	scanf("%i",&numero);
+	printf("(A) ingresa un numero: ");
+	scanf("%i",&A);
+	printf("(B) ingresa un numero: ");
+	scanf("%i",&B);
+	printf("(C) ingresa un numero: ");
+	scanf("%i",&C);
 	
-	//Hacer operaciones
-	if(numero%2==0)
+	if(A>B && A>C)
 	{
-		printf("el numero es par\n");
+		printf("A es el mayor.\n");
 	}
 	else
 	{
-		printf("el numero es impar\n");
+		if(A<B && B>C)
+		{
+			printf("B es el mayor.\n");
+		}
+		else
+		{
+			if(A<C && B<C)
+			{
+				printf("C es el mayor.\n");
+			}
+			else
+			{
+				printf("los numeros son iguales.\n");
+			}
+		}
 	}
-	//Mostrar resultados
 }

@@ -1,9 +1,14 @@
-/*Leer 5 números, sumarlos y mostrar el resultado.
+/*
+Autor: Carbonell Tomas
+Comision: 1ro54
+
+Leer 5 numeros, sumarlos y mostrar el resultado.
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-main()
+void main()
 {
 	int numero1;
 	int numero2;
@@ -23,8 +28,8 @@ main()
 	printf("ingrese el numero: ");
 	scanf("%i",&numero5);
 	
-	resultado=numero1+numero2+numero3+numero4+numero5;
-	printf("el resultado de los 5 numeros es: %i\n ",resultado);
+	resultado = numero1+numero2+numero3+numero4+numero5;
+	printf("el resultado de la sumatoria de los 5 numeros es: %i\n ",resultado);
 
 }
 

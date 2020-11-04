@@ -1,40 +1,35 @@
 /*
+Autor: Carbonell Tomas
+Comision: 1ro54
 
-Se leen tres números, A, B, y C. Se pide escribir el mayor de ellos.
+Se leen tres datos que representan: el nombre, sueldo basico y antiguedad de un empleado.
+Se solicita imprimir el nombre y el sueldo a cobrar.
+Este sueldo a cobrar, se calcula adicionando al basico el 35% del mismo,
+si la antiguedad supera los 10 aÃ±os.
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-main()
+void main()
 {
-	int A;
-	int B;
-	int C;
+	char nombre[20];
+	float sueldo;
+	int antiguedad;
 	
-	printf("(A) ingresa un numero: ");
-	scanf("%i",&A);
-	printf("(B) ingresa un numero: ");
-	scanf("%i",&B);
-	printf("(C) ingresa un numero: ");
-	scanf("%i",&C);
+	printf("ingrese el nombre: ");
+	scanf("%s",nombre);
+	fflush(stdin);
+	printf("ingrese el sueldo basico: ");
+	scanf("%f",&sueldo);
+	printf("ingrese su antiguedad: ");
+	scanf("%i",&antiguedad);
 	
-	if(A>B && A>C)
+	if(antiguedad>10)
 	{
-		printf("A es el mayor.\n");
+		sueldo=sueldo*1.35;
 	}
-	else{
-		if(A<B && B>C)
-		{
-			printf("B es el mayor.\n");
-		}
-		else{
-			if(A<C && B<C)
-			{
-				printf("C es el mayor.\n");
-			}
-			else{
-				printf("los numeros son iguales.\n");
-			}
-		}
-	}
+	
+	printf("nombre: %s\n",nombre);
+	printf("sueldo: %.2f\n",sueldo);
 }

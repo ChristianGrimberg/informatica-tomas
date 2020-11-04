@@ -1,4 +1,7 @@
 /*
+Autor: Carbonell Tomas
+Comision: 1ro54
+
 Ingresar el stock de n cantidad de articulos,
 debiendose averiguar cual es el stock mayor y cual el menor.
 Mostrar el stock correspondiente. 

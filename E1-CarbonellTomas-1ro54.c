@@ -1,32 +1,53 @@
 /*
 Autor: Carbonell Tomas
-Comisión:1°54
-E1: Ingresar 3 números y mostrarlos (uno al lado del otro y uno debajo del otro).
-*/
+Comision: 1ro54
+
+Se debe ingresar nombre, sexo, edad y porcentaje de tiempo transcurrido de este aÃ±o 
+(mes actual/total meses)*100.
+Mostrar los resultados correspondientes. */
 //1.Declaramos las bibliotecas y constantes.
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 
 //2.Iniciamos la estructura principal del programa.
-main()
+void main()
 {
-	//3.Declaramos las variables o estructuras de datos que vamos a utilizar.
-	int num1;
-	int num2;
-	int num3;
-	
-	//4.Ingresamos los datos.
-	printf("Ingrese numero 1: ");
-	scanf("%i",&num1);
-	printf("Ingrese numero 2: ");
-	scanf("%i",&num2);
-	printf("Ingrese numero 3: ");
-	scanf("%i",&num3);
-	
-	//5.Mostramos los resultados.
-	printf("%i-%i-%i\n",num1,num2,num3);
-	printf("%i\n%i\n%i\n",num1,num2,num3);
-	system("pause");
-	//6.Fin del programa.
-	
+   //3.Declaramos las variables o estructuras de datos que vamos a utilizar.
+   int edad;
+   char sexo; 
+   char nombre[20];
+   float porcentaje; 
+   float mesactual;
+
+   //4.Ingresamos los datos.
+   printf("Edad:\t");
+   scanf ("%i", &edad);//Ingresamos la edad
+   printf("Nombre:\t");
+   fflush(stdin);
+   scanf ("%s", nombre);//Ingresamos el nombre
+   printf("Sexo:\t");
+   fflush(stdin);
+   scanf ("%c", &sexo);//Ingresamos el sexo
+   printf("Ingresar mes actual:\t");
+   scanf ("%f", &mesactual);//Ingresamos el mes actual
+
+   //5.Realizamos el proceso que el programa requiere.
+   porcentaje= (mesactual / 12) * 100; 
+   /*En todo cï¿½lculo matemï¿½tico en que intervengan 
+   nï¿½meros enteros y nï¿½meros reales, el resultado 
+   siempre va a ser real, por consiguiente la variable
+   en donde se va a almacenar el dato tambien debe 
+   ser real, porque sino se perderian los decimales 
+   que se obtengan en el resultado*/
+ 
+   //6.Mostramos los resultados.
+   printf("\nMostramos los resultados\n");
+   printf ("Edad:\t%i\n", edad);
+   printf ("Nombre:\t%s\n", nombre);
+   printf ("Sexo:\t%c\n", sexo),
+   printf ("Porcentaje de tiempo transcurrido:\t%.2f\n", porcentaje);
+   system("pause");
+   //7.Fin del programa.
 }
+
+
