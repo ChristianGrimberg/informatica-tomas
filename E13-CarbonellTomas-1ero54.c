@@ -1,5 +1,7 @@
-/*Ingresar el stock de n cantidad de artículos,
- debiéndose averiguar cuál es el stock mayor y cual el menor. Mostrar el stock correspondiente. 
+/*
+Ingresar el stock de n cantidad de articulos,
+debiendose averiguar cual es el stock mayor y cual el menor.
+Mostrar el stock correspondiente. 
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,7 +9,7 @@
 #include <string.h>
 
 
-main()
+void main()
 {
 	char nombreArticulo[20];
 	int cantidadArticulo;
@@ -23,7 +25,7 @@ main()
 	
 	while(toupper(opcion)!='N')
 	{
-		system("cls");
+		system("clear");
 		
 		printf("ingrese el nombre del articulo: ");
 		scanf("%s",nombreArticulo);
@@ -35,19 +37,21 @@ main()
 			cantidadArticuloMax=cantidadArticulo;
 			strcpy(nombreArticuloMax,nombreArticulo);
 		}
-		
-		if(cantidadArticulo<cantidadArticuloMin);
+		else
 		{
-			cantidadArticuloMin=cantidadArticulo;
-			strcpy(nombreArticuloMin,nombreArticulo);
+			if(cantidadArticulo<cantidadArticuloMin);
+			{
+				cantidadArticuloMin=cantidadArticulo;
+				strcpy(nombreArticuloMin,nombreArticulo);
+			}
 		}
 		
 		printf("desea continuar S/N: ");
-		fflush(stdin);
+		//fflush(stdin);
+		setbuf(stdin, NULL);
 		scanf("%c",&opcion);
 	}
 	
 	printf("El articulo %s tiene la mayor cantidad de stock con %i.\n",nombreArticuloMax,cantidadArticuloMax);
 	printf("El articulo %s tiene la menor cantidad de stock con %i.\n",nombreArticuloMin,cantidadArticuloMin);
-	
 }
