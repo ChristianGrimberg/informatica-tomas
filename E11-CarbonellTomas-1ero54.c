@@ -1,16 +1,14 @@
 /*
 Autor: Carbonell Tomas
-Comision: 1ro54
-
-Se debe hacer un programa que nos permita ingresar dos numeros y
-que mediante un menu de opciones nos permita calcular a una de las 
-cuatro operaciones aritmeticas basicas y mostrar dicho resultado.
+Comisión: 1°54
+ Se debe hacer un programa que nos permita ingresar dos números y
+ que mediante un menú de opciones nos permita calcular a una de las cuatro operaciones aritméticas básicas y mostrar dicho resultado.
 */
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 
-void main()
+main()
 {
 	float numero1;
 	float numero2;
@@ -23,7 +21,7 @@ void main()
 	
 	while(toupper(opcion)!= 'F')
 	{
-		system("clear");
+		system("cls");
 		printf("(A)ingresar los numeros\n");
 		printf("(B)sumar\n");
 		printf("(C)restar\n");

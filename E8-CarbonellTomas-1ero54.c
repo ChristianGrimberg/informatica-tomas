@@ -1,16 +1,13 @@
 /*
-Autor: Carbonell Tomas
-Comision: 1ro54
-Se debe ingresar un numero entero, debiendose indicar si dicho numero es par o impar.
-*/
+ Se debe ingresar un número entero, debiéndose indicar si dicho número es par o impar.*/
 #include <stdio.h>
 #include <stdlib.h>
 
-void main()
+main()
 {
 	//Declarar variables para reservar espacio en memoria
+	
 	int numero;
-
 	//Interactuar con el usuario
 	printf("ingresar un numero: ");
 	scanf("%i",&numero);

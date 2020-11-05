@@ -1,16 +1,14 @@
 /*
 Autor: Carbonell Tomas
-Comision:1ro54
-
-Ingresar 3 numeros y mostrarlos (uno al lado del otro y uno debajo del otro).
+Comisión:1°54
+E1: Ingresar 3 números y mostrarlos (uno al lado del otro y uno debajo del otro).
 */
-
 //1.Declaramos las bibliotecas y constantes.
 #include <stdio.h>
-#include <stdlib.h>
+#include<stdlib.h>
 
 //2.Iniciamos la estructura principal del programa.
-void main()
+main()
 {
 	//3.Declaramos las variables o estructuras de datos que vamos a utilizar.
 	int num1;
@@ -28,7 +26,7 @@ void main()
 	//5.Mostramos los resultados.
 	printf("%i-%i-%i\n",num1,num2,num3);
 	printf("%i\n%i\n%i\n",num1,num2,num3);
-	
 	system("pause");
 	//6.Fin del programa.
+	
 }

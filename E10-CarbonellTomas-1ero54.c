@@ -1,17 +1,11 @@
-/*
-Autor: Carbonell Tomas
-Comision: 1ro54
-
-Se leen tres datos que representan: el nombre, sueldo basico y antiguedad de un empleado.
-Se solicita imprimir el nombre y el sueldo a cobrar.
-Este sueldo a cobrar, se calcula adicionando al basico el 35% del mismo,
-si la antiguedad supera los 10 aÃ±os.
+/*Se leen tres datos que representan: el nombre, sueldo básico y antigüedad de un empleado. Se solicita imprimir el nombre y el sueldo a cobrar.
+ Este sueldo a cobrar, se calcula adicionando al básico el 35% del mismo, si la antigüedad supera los 10 años.
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-void main()
+main()
 {
 	char nombre[20];
 	float sueldo;
@@ -32,4 +26,6 @@ void main()
 	
 	printf("nombre: %s\n",nombre);
 	printf("sueldo: %.2f\n",sueldo);
+	
+	
 }

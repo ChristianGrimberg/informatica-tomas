@@ -1,13 +1,11 @@
 /*
-Autor: Carbonell Tomas
-Comision: 1ro54
 
-Se leen tres numeros, A, B, y C. Se pide escribir el mayor de ellos.
+Se leen tres números, A, B, y C. Se pide escribir el mayor de ellos.
 */
 #include <stdio.h>
 #include <stdlib.h>
 
-void main()
+main()
 {
 	int A;
 	int B;
@@ -24,20 +22,17 @@ void main()
 	{
 		printf("A es el mayor.\n");
 	}
-	else
-	{
+	else{
 		if(A<B && B>C)
 		{
 			printf("B es el mayor.\n");
 		}
-		else
-		{
+		else{
 			if(A<C && B<C)
 			{
 				printf("C es el mayor.\n");
 			}
-			else
-			{
+			else{
 				printf("los numeros son iguales.\n");
 			}
 		}

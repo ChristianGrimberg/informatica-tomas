@@ -1,15 +1,13 @@
-/*
-Autor: Carbonell Tomas
-Comision: 1ro54
-
-DiseÃ±ar el algoritmo necesario para que, habiendose leido el valor de 2 variables
+/*Autor:
+Comisión:
+E8:Diseñar el algoritmo necesario para que, habiéndose leído el valor de 2 variables
 NUM1 y NUM2 se intercambien los valores de las mismas, es decir que el valor
-que tenia NUM1 ahora lo contenga NUM2 y viceversa.
+que tenía NUM1 ahora lo contenga NUM2 y viceversa.
 */
 #include <stdio.h>
 #include <stdlib.h>
 
-void main()
+main()
 {
 	int num1;
 	int num2;
@@ -27,4 +25,5 @@ void main()
 	printf("el valor 1 ahora es: %i\n",num1);
 	printf("el valor 2 ahora es: %i\n", num2);
 	system("pause");
+	
 }
