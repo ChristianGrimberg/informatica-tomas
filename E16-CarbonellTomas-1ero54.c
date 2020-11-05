@@ -5,7 +5,7 @@ la suma, el promedio, la cantidad de números pares y la cantidad de números im
 
 #include <stdlib.h>
 #include <stdio.h>
-#define CANTIDAD 3
+#define CANTIDAD 20
 
 void main()
 {
