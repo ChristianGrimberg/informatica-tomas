@@ -41,7 +41,8 @@ void main()
         
         
         printf("Desea continuar? N para salir: ");
-        __fpurge(stdin);
+        setbuf(stdin, NULL);
+        //__fpurge(stdin);
         scanf("%c",&opcion);
     }
 
