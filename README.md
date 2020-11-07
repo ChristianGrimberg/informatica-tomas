@@ -26,7 +26,8 @@ Los ejercicios deben entregarse __TODOS JUNTOS__ respetando el protocolo de entr
     1. Ingresar la clave y el nombre y apellido de los cinco mejores alumnos.
     1. Mostrarlos en el orden que fueron ingresados.
     1. Fin del programa.
-> __NOTA:__ Las opciones del menú deben ser en minúsculas. La clave y el nombre y apellido, deben ser validados: La clave debe tener 4 dígitos numéricos o de caracteres, y el nombre y apellido, no más 30 caracteres.
+    
+    > __NOTA:__ Las opciones del menú deben ser en minúsculas. La clave y el nombre y apellido, deben ser validados: La clave debe tener 4 dígitos numéricos o de caracteres, y el nombre y apellido, no más 30 caracteres.
 1. __Ejercicio 32 del apunte:__ Hacer un programa para ingresar tu nombre, carrera que cursas y edad. Mostrar todos los datos. Se debe validar el nombre (30 caracteres), la carrera (20 caracteres) y la edad debe ser mayor a cero, no se sabe cuántos alumnos son.
 1. __Ejercicio 36 del apunte:__ Se debe un programa que mediante un menú de opciones que nos permita realizar las siguientes acciones: 
     1. Ingresar dos números y mostrar la suma de los números ingresados.
