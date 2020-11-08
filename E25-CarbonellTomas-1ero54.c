@@ -13,14 +13,14 @@ Hacer un programa que por medio de un menú de opciones nos permita realizar las
 #include <stdlib.h>
 #include <ctype.h>
 
-#define ARTICULOS 3
+#define ARTICULOS 200
 #define LONG_DESCRIP 30
 #define INCREMENTO 1.3f
 #define SALIDA 'e'
 
 void main ()
 {
-    int estadoArticulos[ARTICULOS];
+    int estadoArticulos[ARTICULOS]; //0 para inactivo, 1 para activo
     int codigoArticulos[ARTICULOS];
     char descripArticulos[ARTICULOS][LONG_DESCRIP];
     float precioCompraArticulos[ARTICULOS];
@@ -28,6 +28,7 @@ void main ()
     float precioVentaArticulos[ARTICULOS];
     float promedioGanancia;
     char opcion;
+    char continuar;
     int bandera = 0;
 
     do
@@ -47,10 +48,22 @@ void main ()
 
         system("clear");
 
+        //Inicializacion en estado inactivo de todos los articulos
+        for (int i = 0; i < ARTICULOS; i++)
+        {
+            estadoArticulos[i] = 0;
+        }
+        
         switch (tolower(opcion))
         {
             case 'a':
-                /* code */
+                do
+                {
+                    printf("Desea continuar con la carga? s/n: ");
+                    __fpurge(stdin);
+                    scanf("%c", &continuar);
+                } while (tolower(continuar) != 'n');
+                
                 break;
             case 'b':
                 /* code */
