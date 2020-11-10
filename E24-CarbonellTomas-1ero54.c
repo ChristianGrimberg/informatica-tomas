@@ -26,6 +26,8 @@ void main ()
     float gananciaArticulos[ARTICULOS];
     float acumuladorGanancia;
     float promedioGanancia;
+    float gananciaMinima;
+    int contadorGananciaMinima;
     char opcion;
     int bandera = 0;
 
@@ -78,9 +80,24 @@ void main ()
 
                     for (int i = 0; i < ARTICULOS; i++)
                     {
+                        //Calculo de la ganancia desde el precio unitario
                         gananciaArticulos[i] = precioUnitarioArticulos[i] * GANANCIA;
                         acumuladorGanancia += gananciaArticulos[i];
 
+                        //Obtencion del valor de ganancia minima luego de su calculo
+                        if(i == 0)
+                        {
+                            gananciaMinima = gananciaArticulos[i];
+                        }
+                        else
+                        {
+                            if(gananciaArticulos[i] < gananciaMinima)
+                            {
+                                gananciaMinima = gananciaArticulos[i];
+                            }
+                        }
+
+                        //Impresion en pantalla del calculo de ganancia realizado
                         printf("Articulo: %s Precio Unitario: %.2f Ganancia: %.2f\n", 
                             nombreArticulos[i], precioUnitarioArticulos[i], gananciaArticulos[i]);
                     }
@@ -105,9 +122,23 @@ void main ()
                     }
                     else
                     {
+                        contadorGananciaMinima = 0;
+                        
                         printf("=============== ARTICULOS CON MENOR GANANCIA ================\n");
+
+                        for (int i = 0; i < ARTICULOS; i++)
+                        {
+                            if(gananciaArticulos[i] == gananciaMinima)
+                            {
+                                printf("Articulo: %s Precio Unitario: %.2f Ganancia: %.2f\n", 
+                                    nombreArticulos[i], precioUnitarioArticulos[i], gananciaArticulos[i]);
+                                
+                                contadorGananciaMinima++;
+                            }
+                        }
                     
                         printf("=============================================================\n");
+                        printf("Se encontraron %i Articulo/s con ganancia minima\n", contadorGananciaMinima);
                     }
                 }
                 break;
